@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite on Android Phone">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <parameter name="deviceName" value="Nexus 6"/>
+    <parameter name="version" value="8.1"/>
+    <parameter name="moduleName" value="Reddit"/>
+    <parameter name="appName" value="Reddit.apk"/>
+
+    <test name="Go to Home page" preserve-order="true">
+        <classes>
+                <class name="TestReddit"/>
+        </classes>
+    </test>
+</suite>
