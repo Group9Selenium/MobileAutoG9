@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite on Android Phone">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <parameter name="deviceName" value="Pixel 2 API 26"/>
+    <parameter name="version" value="8.0"/>
+    <parameter name="moduleName" value="MYmta"/>
+    <parameter name="appName" value="MYmta.apk"/>
+
+    <test name="MYmta Testing" preserve-order="true">
+        <classes>
+          <class name="TestMYmta"/>
+        </classes>
+    </test>
+</suite>
